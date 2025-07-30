@@ -101,12 +101,12 @@ class TermuxProxyMaster:
             "crypto_mining": False,
             "ai_anomaly_detection": False
         }
-        self.load_config()
+        '''self.load_config()
         self.setup_directories()
         self.load_favorites()
         self.load_history()
         self.traffic_stats = {"sent": 0, "received": 0}
-        signal.signal(signal.SIGINT, self.signal_handler)
+        signal.signal(signal.SIGINT, self.signal_handler)'''
         
     def signal_handler(self, signum, frame):
         print("\n\033[1;31m🛑 Interrupt received! Shutting down...\033[0m")
